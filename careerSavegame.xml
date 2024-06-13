@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
 <careerSavegame revision="2" valid="true">
     <settings>
         <savegameName>Mein Spielstand</savegameName>
@@ -68,4 +68,8 @@
     <mod modName="FS22_reckJumbo2" title="Reck JUMBO 2" version="1.1.0.0" required="false" fileHash="f6045200c5df0f24c9cbcf9bbbd906d8"/>
     <mod modName="FS22_kniesVA" title="Knies VA Pack" version="1.0.0.0" required="false" fileHash="6f89c92cbdf17ff3b6db08e88deabc59"/>
     <mod modName="FS22_FendtFavoritSeries" title="Fendt Favorit Series" version="1.1.0.0" required="false" fileHash="49e6e5187520ba1cdc66a3ec9f79030c"/>
+	<mod modName="FBM22_Fendt_Rapide_580V" title="Fendt Rapide 580V" version="1.0.0.1" required="false" fileHash="de73f6bdd3e7cc9f9bf8b553e1949b5a"/>
+	<mod modName="DZ22_johnDeere_6R_Series" title="John Deere 6R Series" version="1.0.0.0" required="false" fileHash="89e0d7458dca4b42f03a093c54dbb030"/>
+	<mod modName="pdlc_antonioCarraroPack" title="Antonio Carraro Pack" version="1.1.1.0" required="false" fileHash="a80574947b37ccca8cbf015ecca117cf"/>
+	<mod modName="VehicleFruitHud" title="VehicleFruit Hud" version="0.63 Beta" required="false" fileHash="00b9b692d6369193ca1ee4fc6c1a285c"/>
 </careerSavegame>
