@@ -1,4 +1,4 @@
-# FS22_Savegame_Mod_depencies
+# FS22_Savegame_Mod_dependencies
 ## Autoload von Modhub-Mods für Farming Simulator 22 Savegames
 
 Dieses Tool ermöglicht es, aus einem bestehenden Savegame die Mods (sofern im Modhub verfügbar) zu ermitteln, die bei einer Weitergabe des Spielstandes notwendig sind. Diese können dann in Form eines eigenen Mods als Abhängigkeit in den Modordner gepackt werden. 
