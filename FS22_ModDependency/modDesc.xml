@@ -8,18 +8,15 @@
     </title>
     <description>
         <de>
-<![CDATA[Notwendige Mods für ein Savegame.]]>
+			<![CDATA[Notwendige Mods für ein Savegame.]]>
         </de>
-	<en>
-<![CDATA[Mods required for a savegame.]]>
-	</en>
+		<en>
+			<![CDATA[Mods required for a savegame.]]>
+		</en>
     </description>
-
 	<iconFilename>store.dds</iconFilename>
-
     <multiplayer supported="true"/>
-	
 	<dependencies>
-		<dependency></dependency> 
+		<!-- hier Modhub Mods einfügen // enter modhub mods here -->
 	</dependencies>
 </modDesc>
