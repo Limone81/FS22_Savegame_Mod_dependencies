@@ -62,7 +62,7 @@ addNames(dlc, 'pdlc')
 com3 = Comment('none Modhub Mods')
 root.append(com3)
 
-# add Dlc
+# add none-Modhub Mods
 addNames(modsOther, 'otherMods')
 
 # get newlines after each entry for pretty look
