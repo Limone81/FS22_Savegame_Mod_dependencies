@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<careerSavegame revision="2" valid="true">
+    <settings>
+        <savegameName>Mein Spielstand</savegameName>
+        <creationDate>2024-04-01</creationDate>
+        <mapId>FS22_Ellerbach.SampleModMap</mapId>
+        <mapTitle>Ellerbach</mapTitle>
+        <saveDateFormatted>10.06.2024</saveDateFormatted>
+        <saveDate>2024-06-10</saveDate>
+        <resetVehicles>false</resetVehicles>
+        <trafficEnabled>true</trafficEnabled>
+        <stopAndGoBraking>true</stopAndGoBraking>
+        <trailerFillLimit>false</trailerFillLimit>
+        <automaticMotorStartEnabled>false</automaticMotorStartEnabled>
+        <growthMode>1</growthMode>
+        <plannedDaysPerPeriod>3</plannedDaysPerPeriod>
+        <fruitDestruction>true</fruitDestruction>
+        <plowingRequiredEnabled>true</plowingRequiredEnabled>
+        <stonesEnabled>false</stonesEnabled>
+        <weedsEnabled>true</weedsEnabled>
+        <limeRequired>true</limeRequired>
+        <isSnowEnabled>true</isSnowEnabled>
+        <fuelUsage>2</fuelUsage>
+        <helperBuyFuel>true</helperBuyFuel>
+        <helperBuySeeds>true</helperBuySeeds>
+        <helperBuyFertilizer>true</helperBuyFertilizer>
+        <helperSlurrySource>2</helperSlurrySource>
+        <helperManureSource>2</helperManureSource>
+        <densityMapRevision>3</densityMapRevision>
+        <terrainTextureRevision>1</terrainTextureRevision>
+        <terrainLodTextureRevision>2</terrainLodTextureRevision>
+        <splitShapesRevision>2</splitShapesRevision>
+        <tipCollisionRevision>2</tipCollisionRevision>
+        <placementCollisionRevision>2</placementCollisionRevision>
+        <navigationCollisionRevision>2</navigationCollisionRevision>
+        <mapDensityMapRevision>1</mapDensityMapRevision>
+        <mapTerrainTextureRevision>1</mapTerrainTextureRevision>
+        <mapTerrainLodTextureRevision>1</mapTerrainLodTextureRevision>
+        <mapSplitShapesRevision>1</mapSplitShapesRevision>
+        <mapTipCollisionRevision>1</mapTipCollisionRevision>
+        <mapPlacementCollisionRevision>1</mapPlacementCollisionRevision>
+        <mapNavigationCollisionRevision>1</mapNavigationCollisionRevision>
+        <difficulty>1</difficulty>
+        <economicDifficulty>2</economicDifficulty>
+        <dirtInterval>3</dirtInterval>
+        <timeScale>1.000000</timeScale>
+        <autoSaveInterval>15.000000</autoSaveInterval>
+    </settings>
+    <guidedTour active="false" currentStepIndex="0" state=""/>
+    <map>
+        <foundHelpIcons>00000000000000000000</foundHelpIcons>
+    </map>
+    <statistics>
+        <money>993243</money>
+        <playTime>92.498428</playTime>
+    </statistics>
+    <slotSystem slotUsage="749"/>
+    <mapsSplitShapeFileIds count="1">
+        <id id="0"/>
+    </mapsSplitShapeFileIds>
+    <foliageTypes>
+        <foliageType name="beetRoot" filename="data/foliage/beetRoot/beetRoot.xml"/>
+        <foliageType name="carrot" filename="data/foliage/carrot/carrot.xml"/>
+        <foliageType name="parsnip" filename="data/foliage/parsnip/parsnip.xml"/>
+    </foliageTypes>
+    <mod modName="FS22_Fork_saphir" title="Saphir Ballengabel" version="1.0.0.0" required="false" fileHash="d219e1e5510779c18268a4a385221268"/>
+    <mod modName="FS22_MeprozetPN3_18" title="Meprozet PN-3/18" version="2.0.0.1" required="false" fileHash="3e9c0b1ea2d41e2edd7550b12b6f10a7"/>
+    <mod modName="FS22_reckJumbo2" title="Reck JUMBO 2" version="1.1.0.0" required="false" fileHash="f6045200c5df0f24c9cbcf9bbbd906d8"/>
+    <mod modName="FS22_kniesVA" title="Knies VA Pack" version="1.0.0.0" required="false" fileHash="6f89c92cbdf17ff3b6db08e88deabc59"/>
+    <mod modName="FS22_FendtFavoritSeries" title="Fendt Favorit Series" version="1.1.0.0" required="false" fileHash="49e6e5187520ba1cdc66a3ec9f79030c"/>
+</careerSavegame>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<modDesc descVersion="72">
+    <author>limone81</author>
+    <version>1.0.0.0</version>
+    <title>
+        <de>Dependency Mod List</de>
+		<en>Dependency Mod List</en>
+    </title>
+    <description>
+        <de>
+<![CDATA[Notwendige Mods für ein Savegame.]]>
+        </de>
+	<en>
+<![CDATA[Mods required for a savegame.]]>
+	</en>
+    </description>
+
+	<iconFilename>store.dds</iconFilename>
+
+    <multiplayer supported="true"/>
+	
+	<dependencies>
+		<dependency></dependency> 
+	</dependencies>
+</modDesc>
