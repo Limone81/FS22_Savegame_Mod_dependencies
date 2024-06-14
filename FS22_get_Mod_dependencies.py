@@ -34,39 +34,59 @@ for element in root.iter(('mod')):
         modsOther.append(x)
         titleOther.append(y)
 
+# parse modDesc.xml
+tree2 = ET.parse('modDesc.xml')
+root2 = tree2.getroot()
+
+# get position of subelement
+getPos = tree2.find('dependencies')
+
+# function to add subelements
 def addNames(toadd, value):
     for i in toadd:
-        add = ET.Element(value)
-        add.text = i
-        root.append(add)
+        sub = ET.Element(value)
+        sub.text = i
+        getPos.append(sub)
 
-# create new root
-root = ET.fromstring("<dependencies></dependencies>")
-tree = ET.ElementTree(root)
-
-# adding comment for Modhub Mods to xml
-com1 = Comment('Modhub Mods')
-root.append(com1)
 
 # add Modhub Mods
 addNames(modsHub, 'dependency')
 
+# get newlines after each entry for pretty look
+ET.indent(tree2, space="\t", level=0)
+
+# save tree to modDesc.xml
+tree2.write('modDesc.xml', encoding='utf-8', xml_declaration=True)
+
+def addDlcOther(toadd, title, value):
+    x=0
+    for i in toadd:
+        add = ET.Element(value)
+        add.text = i
+        add.set ('title', title[x])
+        root3.append(add)
+        x += 1
+
+# create new root
+root3 = ET.fromstring("<item></item>")
+tree3 = ET.ElementTree(root3)
+
 # adding comment for DLC to xml
 com2 = Comment('DLC')
-root.append(com2)
+root3.append(com2)
 
 # add Dlc
-addNames(dlc, 'pdlc')
+addDlcOther(dlc, titleDlc, 'pdlc')
 
 # adding comment for none Modhub Mods to xml
 com3 = Comment('none Modhub Mods')
-root.append(com3)
+root3.append(com3)
 
 # add none-Modhub Mods
-addNames(modsOther, 'otherMods')
+addDlcOther(modsOther, titleOther, 'otherMods')
 
 # get newlines after each entry for pretty look
-ET.indent(tree, space="\t", level=0)
+ET.indent(tree3, space="\t", level=0)
 
-# save tree to dependencies.xml
-tree.write('dependencies.xml', encoding='utf-8', xml_declaration=True)
+# save tree to dlc_noneModhubMods.xml
+tree3.write('dlc_noneModhubMods.xml', encoding='utf-8', xml_declaration=True)

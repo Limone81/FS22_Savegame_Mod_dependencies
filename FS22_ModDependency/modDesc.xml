@@ -17,6 +17,6 @@
 	<iconFilename>store.dds</iconFilename>
     <multiplayer supported="true"/>
 	<dependencies>
-		<!-- hier Modhub Mods einfügen // enter modhub mods here -->
+		
 	</dependencies>
 </modDesc>
