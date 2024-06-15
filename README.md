@@ -6,7 +6,7 @@ Dieses Tool ermöglicht es, aus einem bestehenden Savegame die Mods (sofern im M
 Die ermittelten Mods werden in einer modDesc-Datei als dependency gespeichert. Alle Mods, die mit "FS22" beginnen, werden dabei zur modDesc hinzugefügt. DLC und Mods die nicht mit "FS22" beginnen werden als "none Modhub Mods" klassifiziert und gesondert in einer xml-Datei ausgegeben. Wenn Mods mit "FS22" im Modnamen beginnen, aber dennoch nicht aus dem Modhub stammen, funktioniert dass an der Stelle nicht und die Information dazu muss separat erfolgen, ebenso die Herkunft derer.
 
 ### Ablauf
-Lade die Dateien (Release) herunter und entpaccke es
+Lade die Dateien (Release) herunter und entpacke sie
 1. Kopiere die **careerSavegame.xml** die ausgelesen werden soll in den Ornder **executable**
 2. führe die *.exe per Doppelklick aus, die Savegame Datei wird eingelesen, die Modhub-Mods in die **modDesc.xml eingetragen** (im Ordner **FS22_ModDependency**) und es wird eine separate **dlc_noneModhubMods.xml** erzeugt, aus der die DLC- sowie "none Modhub Mods"-Namen entnommen werden können
 3. zippe die modDesc.xml sowie die Bilddatei in dem Ordner FS22_ModDependency (Dateiformat zip, kein rar und kein 7z) -> Name sollte dann **FS22_ModDependency.zip** sein
