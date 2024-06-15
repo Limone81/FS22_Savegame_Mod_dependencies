@@ -1,13 +1,15 @@
 #!/usr/bin/env python
 __author__ = 'limone81'
-__version__ = '0.0.1'
+__version__ = '1.2'
 __status__ = 'dev'
 
 ### imports
 import xml.etree.ElementTree as ET
 from xml.etree.ElementTree import Element, SubElement, Comment
+import os
 
 ### variables
+modDesc = '../FS22_ModDependency/modDesc.xml'
 modsHub = []
 titleHub = []
 dlc = []
@@ -16,6 +18,8 @@ modsOther = []
 titleOther = []
 
 ### main
+os.path.abspath
+
 # parse careerSavegame.xml
 tree = ET.parse('careerSavegame.xml')
 root = tree.getroot()
@@ -35,11 +39,19 @@ for element in root.iter(('mod')):
         titleOther.append(y)
 
 # parse modDesc.xml
-tree2 = ET.parse('modDesc.xml')
+tree2 = ET.parse(modDesc)
 root2 = tree2.getroot()
+
 
 # get position of subelement
 getPos = tree2.find('dependencies')
+
+# clean old dependencies for next run
+oldDepends = getPos.findall('dependency')
+x = 0
+for i in oldDepends:
+    getPos.remove(oldDepends[x])
+    x += 1
 
 # function to add subelements
 def addNames(toadd, value):
@@ -56,7 +68,7 @@ addNames(modsHub, 'dependency')
 ET.indent(tree2, space="\t", level=0)
 
 # save tree to modDesc.xml
-tree2.write('modDesc.xml', encoding='utf-8', xml_declaration=True)
+tree2.write(modDesc, encoding='utf-8', xml_declaration=True)
 
 def addDlcOther(toadd, title, value):
     x=0
