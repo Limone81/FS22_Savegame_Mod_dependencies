@@ -11,11 +11,12 @@ Die ermittelten Mods werden in einer modDesc-Datei als dependency gespeichert. A
 Lade die Dateien (Release) herunter und entpacke sie
 1. Kopiere die **careerSavegame.xml** die ausgelesen werden soll in den Ordner **executable**
 2. führe die *.exe per Doppelklick aus, die Savegame Datei wird eingelesen, die Modhub-Mods in die **modDesc.xml eingetragen** (im Ordner **FS22_ModDependency**) und es wird eine separate **dlc_noneModhubMods.xml** erzeugt, aus der die DLC- sowie "none Modhub Mods"-Namen entnommen werden können
-3. zippe die modDesc.xml sowie die Bilddatei in dem Ordner FS22_ModDependency (Dateiformat zip, kein rar und kein 7z) -> Name sollte dann **FS22_ModDependency.zip** sein
+3. im Ordner FS22_ModDependency wird automatisch eine **FS22_ModDependency.zip** erstellt
 4. kopiere die FS22_ModDependency.zip in deinen Modordner
 5. konfiguriere das erhaltene Savegame in deinem **FarmingSimulator2022** Ornder
 6. Starte den Farming Simulator 22 und lade das Savegame, die benötigten Mods sollten als Popup angezeigt werden, mit der Möglichkeit diese zu laden
 
+:rotating_light: Für die Experten mit 1000 Mods im Ordner hier die Warnung! Der Dependency Mod wird eine Downloadschlange initialisieren, die auch nach einem Neustart des Spieles weiter geladen wird. Wenn man diesen Prozess beenden will, muss man im  Ordner **My Games\FarmingSimulator2022\pending_downloads** die Datei pendingDownloadQueue.dat löschen.
 
 ## English description
 
@@ -29,7 +30,9 @@ The mods determined are saved in a modDesc file as a dependency. All mods that b
 Download the files (release) and unpack it
 1. copy the **careerSavegame.xml** to be read into the **executable** folder
 2. double-click the *.exe, the savegame file is read in, the modhub mods are entered in the **modDesc.xml** (in the **FS22_ModDependency** folder) and a separate **dlc_noneModhubMods.xml** is created, from which the DLC and "none Modhub Mods" names can be taken.
-3. zip the modDesc.xml and the image file into the folder FS22_ModDependency (file format zip, no rar and no 7z) -> name should then be **FS22_ModDependency.zip**.
+3. a **FS22_ModDependency.zip** is automatically created in the FS22_ModDependency folder
 4. copy the FS22_ModDependency.zip into your mod folder
 5. configure the received savegame in your **FarmingSimulator2022** folder
 6. start Farming Simulator 22 and load the savegame, the required mods should be displayed as a popup with the option to load them
+
+:rotating_light: For the experts with 1000 mods in their folder, here is a warning! The dependency mod will initialize a download queue that will continue to load even after restarting the game. If you want to end this process, you must delete the pendingDownloadQueue.dat file in the **My Games\FarmingSimulator2022\pending_downloads** folder.
