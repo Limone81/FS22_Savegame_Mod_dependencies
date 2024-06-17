@@ -1,12 +1,13 @@
 #!/usr/bin/env python
 __author__ = 'limone81'
-__version__ = '1.2'
+__version__ = '1.3'
 __status__ = 'dev'
 
 ### imports
 import xml.etree.ElementTree as ET
 from xml.etree.ElementTree import Element, SubElement, Comment
 import os
+from zipfile import ZipFile
 
 ### variables
 modDesc = '../FS22_ModDependency/modDesc.xml'
@@ -70,6 +71,13 @@ ET.indent(tree2, space="\t", level=0)
 # save tree to modDesc.xml
 tree2.write(modDesc, encoding='utf-8', xml_declaration=True)
 
+# create zipfile FS22_ModDependency.zip
+with ZipFile('../FS22_ModDependency/FS22_ModDependency.zip', 'w') as zip_object:
+   # files to be zipped (filepath, path_in_archive)
+   zip_object.write('../FS22_ModDependency/modDesc.xml','modDesc.xml')
+   zip_object.write('../FS22_ModDependency/store.dds', 'store.dds')
+zip_object.close()
+
 def addDlcOther(toadd, title, value):
     x=0
     for i in toadd:
@@ -102,3 +110,5 @@ ET.indent(tree3, space="\t", level=0)
 
 # save tree to dlc_noneModhubMods.xml
 tree3.write('dlc_noneModhubMods.xml', encoding='utf-8', xml_declaration=True)
+
+
